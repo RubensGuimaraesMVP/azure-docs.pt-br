@@ -114,6 +114,8 @@ Um grupo de segurança de aplicativos permite agrupar servidores com funções s
 
     | Configuração                 | Valor                                                                                                           |
     | ---------               | ---------                                                                                                       |
+    | Fonte:             | Selecione **Todos**.  |
+    | Fonte - Intervalo de Portas:             | Selecione *****.  |
     | Destino             | Selecione **Grupo de segurança de aplicativo** e, em seguida, selecione **myAsgWebServers** para **Grupo de segurança de aplicativo**.  |
     | Intervalos de portas de destino | Insira 80,443                                                                                                    |
     | Protocolo                | Selecione TCP                                                                                                      |
@@ -123,6 +125,8 @@ Um grupo de segurança de aplicativos permite agrupar servidores com funções s
 
     | Configuração                 | Valor                                                                                                           |
     | ---------               | ---------                                                                                                       |
+    | Fonte:             | Selecione **Todos**.  |
+    | Fonte - Intervalo de Portas:             | Selecione *****.  |
     | Destino             | Selecione **Grupo de segurança de aplicativo** e, em seguida, selecione **myAsgMgmtServers** para **Grupo de segurança de aplicativo**. |
     | Intervalos de portas de destino | Insira 3389                                                                                                      |
     | Protocolo                | Selecione TCP                                                                                                      |
@@ -169,7 +173,7 @@ Crie duas VMs na rede virtual.
 
 Conclua as etapas de 1 a 6 novamente, mas, na etapa 3, nomeie a VM como *myVmMgmt*. A VM demora alguns minutos para implantar. Não prossiga para a próxima etapa até que a VM seja implantada.
 
-## <a name="associate-network-interfaces-to-an-asg"></a>Associar adaptadores de rede a um ASG
+## <a name="associate-network-interfaces-to-an-asg"></a>Associar adaptadores de rede a um NSG
 
 Quando o portal criou as VMs, ele criou e anexou uma interface de rede para cada VM. Adicione a interface de rede para cada VM para um dos grupos de segurança de aplicativo criados anteriormente:
 
